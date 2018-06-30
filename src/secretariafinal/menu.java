@@ -5,8 +5,8 @@
  */
 package secretariafinal;
 
-import secretaria.generarInforme;
-import secretaria.principal;
+import secretariafinal.generarInforme;
+import secretariafinal.principal;
 import secretariafinal.IngresarDocentes;
 
 /**
