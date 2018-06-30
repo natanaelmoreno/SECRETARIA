@@ -29,7 +29,7 @@ public class principal extends javax.swing.JFrame {
     DefaultComboBoxModel modelocarrera = new DefaultComboBoxModel();
     int numero;
     private int ciclo = 1, anio = 4, nombre = 150, carnet = 7, direccion = 100, telefono = 8;
-    private int tema = 500, fecha=8, uv=3;
+    private int tema = 500, fecha=9, uv=3;
     metodos director = new metodos();
     metodos asesor = new metodos();
     metodos carrera = new metodos();
@@ -130,8 +130,8 @@ public class principal extends javax.swing.JFrame {
         txtfinal = new javax.swing.JFormattedTextField();
         txtinicio = new javax.swing.JFormattedTextField();
         jLabel18 = new javax.swing.JLabel();
-        txttelefono = new javax.swing.JFormattedTextField();
-        txtteltra = new javax.swing.JFormattedTextField();
+        txtteltra = new javax.swing.JTextField();
+        txttelefono = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -425,39 +425,24 @@ public class principal extends javax.swing.JFrame {
         jLabel18.setText("Tema :");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 550, -1, -1));
 
-        try {
-            txttelefono.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
+        txtteltra.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtteltra.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtteltraKeyTyped(evt);
+            }
+        });
+        getContentPane().add(txtteltra, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 310, 140, -1));
+
         txttelefono.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txttelefonoKeyTyped(evt);
             }
         });
-        getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 270, 140, -1));
-
-        try {
-            txtteltra.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        txtteltra.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtteltra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtteltraActionPerformed(evt);
-            }
-        });
-        txtteltra.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtteltraKeyTyped(evt);
-            }
-        });
-        getContentPane().add(txtteltra, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 310, 150, -1));
+        getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, 130, -1));
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/red-backgrounds-wallpaper-1280x1024.jpg"))); // NOI18N
-        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -130, 1290, 770));
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1290, 770));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -718,22 +703,6 @@ public class principal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtcarnetKeyTyped
 
-    private void txttelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttelefonoKeyTyped
-        if (txttelefono.getText().length() == telefono) {
-            evt.consume();
-        }
-    }//GEN-LAST:event_txttelefonoKeyTyped
-
-    private void txtteltraKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtteltraKeyTyped
-        if (txtteltra.getText().length() == telefono) {
-            evt.consume();
-        }
-    }//GEN-LAST:event_txtteltraKeyTyped
-
-    private void txtteltraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtteltraActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtteltraActionPerformed
-
     private void txtingresoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtingresoKeyTyped
         if (txtingreso.getText().length() == anio) {
             evt.consume();
@@ -775,6 +744,18 @@ public class principal extends javax.swing.JFrame {
             evt.consume();
         }
     }//GEN-LAST:event_txtuvKeyTyped
+
+    private void txttelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttelefonoKeyTyped
+          if (txttelefono.getText().length() == telefono) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txttelefonoKeyTyped
+
+    private void txtteltraKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtteltraKeyTyped
+         if (txtteltra.getText().length() == telefono) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_txtteltraKeyTyped
 
     /**
      * @param args the command line arguments
@@ -857,8 +838,8 @@ public class principal extends javax.swing.JFrame {
     private javax.swing.JTextField txtlugar;
     private javax.swing.JTextField txtnombre;
     private javax.swing.JTextField txtplan;
-    private javax.swing.JFormattedTextField txttelefono;
-    private javax.swing.JFormattedTextField txtteltra;
+    private javax.swing.JTextField txttelefono;
+    private javax.swing.JTextField txtteltra;
     private javax.swing.JTextArea txttema;
     private javax.swing.JTextField txtuv;
     // End of variables declaration//GEN-END:variables
