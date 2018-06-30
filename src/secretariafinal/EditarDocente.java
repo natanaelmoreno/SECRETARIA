@@ -22,11 +22,12 @@ public class EditarDocente extends javax.swing.JFrame {
      */
     ResultSet rs = null;
     int cantidad, mayor;
-    private int  nombre=150;
+    private int nombre = 150;
     metodos llenar = new metodos();
     boolean encontrado = false;
-    
-metodos elim=new metodos();
+
+    metodos elim = new metodos();
+
     public EditarDocente() {
         initComponents();
         bloquear();
@@ -206,10 +207,10 @@ metodos elim=new metodos();
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
         if (rbasesor.isSelected()) {
             llenar.modificarasesor(Integer.parseInt(this.txtcodigo.getText()), this.txtnombre.getText());
-          JOptionPane.showMessageDialog(null,"Ingreso exitoso");
+            JOptionPane.showMessageDialog(null, "Ingreso exitoso");
         } else {
             llenar.modificargeneral(Integer.parseInt(this.txtcodigo.getText()), this.txtnombre.getText());
-          JOptionPane.showMessageDialog(null,"Ingreso exitoso");
+            JOptionPane.showMessageDialog(null, "Ingreso exitoso");
         }
         bloquearg();
         limpiar();
@@ -217,27 +218,27 @@ metodos elim=new metodos();
     }//GEN-LAST:event_btnguardarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        IngresarDocentes  regresar=new  IngresarDocentes();
-    regresar.setVisible(true);
-    dispose();
+        IngresarDocentes regresar = new IngresarDocentes();
+        regresar.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btneliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneliminarActionPerformed
-        
-          String cod= txtcodigo.getText();
-        
+
+        String cod = txtcodigo.getText();
+
         if (rbasesor.isSelected()) {
-       elim.eliminarasesor(cod);
-       JOptionPane.showMessageDialog(null,"Eliminacion exitosa");
+            elim.eliminarasesor(cod);
+            JOptionPane.showMessageDialog(null, "Eliminacion exitosa");
         } else {
             elim.eliminargeneral(cod);
-            JOptionPane.showMessageDialog(null,"Eliminacion exitosa");
+            JOptionPane.showMessageDialog(null, "Eliminacion exitosa");
         }
         limpiar();
     }//GEN-LAST:event_btneliminarActionPerformed
 
     private void txtnombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnombreKeyTyped
-         if (txtnombre.getText().length() == nombre) {
+        if (txtnombre.getText().length() == nombre) {
             evt.consume();
         }
     }//GEN-LAST:event_txtnombreKeyTyped
@@ -297,15 +298,17 @@ public void desbloquearR() {
         txtnombre.setEnabled(true);
     }
 
-public void desbloquearg() {
+    public void desbloquearg() {
         btnguardar.setEnabled(true);
-}
-public void bloquearg() {
+    }
+
+    public void bloquearg() {
         btnguardar.setEnabled(false);
-}
-public void bloquearN() {
+    }
+
+    public void bloquearN() {
         txtnombre.setEnabled(false);
-}
+    }
 
     public void bloquear() {
 
