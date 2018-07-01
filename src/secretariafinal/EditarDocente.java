@@ -53,8 +53,8 @@ public class EditarDocente extends javax.swing.JFrame {
         btnguardar = new javax.swing.JButton();
         btneliminar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -80,6 +80,7 @@ public class EditarDocente extends javax.swing.JFrame {
         getContentPane().add(rbasesor, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, -1, -1));
         getContentPane().add(txtcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 263, -1));
 
+        txtnombre.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtnombreKeyTyped(evt);
@@ -97,51 +98,57 @@ public class EditarDocente extends javax.swing.JFrame {
         jLabel2.setText("Nombre");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, -1));
 
-        btneditar.setBackground(new java.awt.Color(102, 102, 102));
+        btneditar.setBackground(new java.awt.Color(51, 51, 51));
         btneditar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btneditar.setForeground(new java.awt.Color(240, 240, 240));
         btneditar.setText("Buscar");
         btneditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btneditarActionPerformed(evt);
             }
         });
-        getContentPane().add(btneditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 110, 90, 40));
+        getContentPane().add(btneditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 90, 90, 30));
 
-        btnguardar.setBackground(new java.awt.Color(102, 102, 102));
+        btnguardar.setBackground(new java.awt.Color(51, 51, 51));
         btnguardar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnguardar.setForeground(new java.awt.Color(240, 240, 240));
         btnguardar.setText("Guardar Edicion");
         btnguardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnguardarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 190, 150, 40));
+        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 160, 150, 40));
 
-        btneliminar.setBackground(new java.awt.Color(102, 102, 102));
+        btneliminar.setBackground(new java.awt.Color(51, 51, 51));
         btneliminar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btneliminar.setForeground(new java.awt.Color(240, 240, 240));
         btneliminar.setText("Eliminar");
         btneliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btneliminarActionPerformed(evt);
             }
         });
-        getContentPane().add(btneliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 260, 110, 40));
+        getContentPane().add(btneliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 230, 110, 40));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(240, 240, 240));
         jLabel3.setText("Seleccione la opcion que desea editar ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 350, 23));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/red-backgrounds-wallpaper-1280x1024.jpg"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 400));
-
+        jButton1.setBackground(new java.awt.Color(51, 51, 51));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(240, 240, 240));
         jButton1.setText("Regresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(617, 367, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 300, 110, 30));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/red-backgrounds-wallpaper-1280x1024.jpg"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -50, 850, 420));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

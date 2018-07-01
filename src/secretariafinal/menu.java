@@ -48,8 +48,9 @@ public class menu extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(102, 102, 102));
+        jButton1.setBackground(new java.awt.Color(51, 51, 51));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(240, 240, 240));
         jButton1.setText("Nuevo");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,8 +59,9 @@ public class menu extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 140, 40));
 
-        jButton2.setBackground(new java.awt.Color(102, 102, 102));
+        jButton2.setBackground(new java.awt.Color(51, 51, 51));
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(240, 240, 240));
         jButton2.setText("Ingresar Docentes");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,8 +70,9 @@ public class menu extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, -1, 40));
 
-        jButton3.setBackground(new java.awt.Color(102, 102, 102));
+        jButton3.setBackground(new java.awt.Color(51, 51, 51));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(240, 240, 240));
         jButton3.setText("Generar Informe");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,8 +87,9 @@ public class menu extends javax.swing.JFrame {
         jLabel1.setText("Menú");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 119, 24));
 
-        btnsalir.setBackground(new java.awt.Color(102, 102, 102));
+        btnsalir.setBackground(new java.awt.Color(51, 51, 51));
         btnsalir.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnsalir.setForeground(new java.awt.Color(240, 240, 240));
         btnsalir.setText("Salir");
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

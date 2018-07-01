@@ -325,6 +325,7 @@ public class principal extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(102, 102, 102));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(240, 240, 240));
         jButton1.setText("Guardar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -366,6 +367,7 @@ public class principal extends javax.swing.JFrame {
 
         btnregresar.setBackground(new java.awt.Color(102, 102, 102));
         btnregresar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnregresar.setForeground(new java.awt.Color(240, 240, 240));
         btnregresar.setText("Regresar");
         btnregresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -376,6 +378,7 @@ public class principal extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(102, 102, 102));
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(240, 240, 240));
         jButton3.setText("Mostrar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -386,6 +389,7 @@ public class principal extends javax.swing.JFrame {
 
         btnnuevo.setBackground(new java.awt.Color(102, 102, 102));
         btnnuevo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnnuevo.setForeground(new java.awt.Color(240, 240, 240));
         btnnuevo.setText("Nuevo");
         btnnuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -73,14 +73,15 @@ public class IngresarDocentes extends javax.swing.JFrame {
         jLabel2.setText("Nombre");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
 
+        txtnombre.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtnombreKeyTyped(evt);
             }
         });
-        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 260, -1));
+        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 340, -1));
 
-        btnguardar.setBackground(new java.awt.Color(102, 102, 102));
+        btnguardar.setBackground(new java.awt.Color(51, 51, 51));
         btnguardar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnguardar.setForeground(new java.awt.Color(240, 240, 240));
         btnguardar.setText("Guardar");
@@ -118,7 +119,7 @@ public class IngresarDocentes extends javax.swing.JFrame {
         });
         getContentPane().add(rbAsesor, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
 
-        btnregresar.setBackground(new java.awt.Color(102, 102, 102));
+        btnregresar.setBackground(new java.awt.Color(51, 51, 51));
         btnregresar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnregresar.setForeground(new java.awt.Color(240, 240, 240));
         btnregresar.setText("Regresar");
@@ -127,9 +128,9 @@ public class IngresarDocentes extends javax.swing.JFrame {
                 btnregresarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnregresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 160, 140, 40));
+        getContentPane().add(btnregresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 140, 40));
 
-        jButton1.setBackground(new java.awt.Color(102, 102, 102));
+        jButton1.setBackground(new java.awt.Color(51, 51, 51));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(240, 240, 240));
         jButton1.setText("Modificar ");
@@ -138,7 +139,7 @@ public class IngresarDocentes extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 100, 140, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 130, 140, 40));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/red-backgrounds-wallpaper-1280x1024.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");

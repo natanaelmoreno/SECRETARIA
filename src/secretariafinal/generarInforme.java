@@ -38,7 +38,6 @@ public class generarInforme extends javax.swing.JFrame {
 
         initComponents();
 
-        setSize(1200, 750);
 
         this.setLocationRelativeTo(rootPane);
 
@@ -93,6 +92,7 @@ public class generarInforme extends javax.swing.JFrame {
         txtcoordinador = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -102,42 +102,46 @@ public class generarInforme extends javax.swing.JFrame {
         jLabel1.setText("Temas:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, -1, -1));
 
-        getContentPane().add(cmbtemas, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 246, -1));
+        cmbtemas.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        getContentPane().add(cmbtemas, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 640, -1));
 
-        btnbuscarpersonas.setBackground(new java.awt.Color(102, 102, 102));
+        btnbuscarpersonas.setBackground(new java.awt.Color(51, 51, 51));
         btnbuscarpersonas.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnbuscarpersonas.setForeground(new java.awt.Color(240, 240, 240));
         btnbuscarpersonas.setText("Añadir");
         btnbuscarpersonas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbuscarpersonasActionPerformed(evt);
             }
         });
-        getContentPane().add(btnbuscarpersonas, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, -1, -1));
+        getContentPane().add(btnbuscarpersonas, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 120, 40));
 
         tblmostrar.setModel(modelotabla);
         jScrollPane1.setViewportView(tblmostrar);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 480, 970, 210));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 1340, 210));
 
-        jButton1.setBackground(new java.awt.Color(102, 102, 102));
+        jButton1.setBackground(new java.awt.Color(51, 51, 51));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(240, 240, 240));
         jButton1.setText("Convertir a Excel");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 120, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 120, 180, 40));
 
-        btnregresar.setBackground(new java.awt.Color(102, 102, 102));
+        btnregresar.setBackground(new java.awt.Color(51, 51, 51));
         btnregresar.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnregresar.setForeground(new java.awt.Color(240, 240, 240));
         btnregresar.setText("Regresar");
         btnregresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnregresarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnregresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, -1, -1));
+        getContentPane().add(btnregresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 120, 120, 40));
 
         dfg.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         dfg.setForeground(new java.awt.Color(240, 240, 240));
@@ -173,7 +177,10 @@ public class generarInforme extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(240, 240, 240));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/red-backgrounds-wallpaper-1280x1024.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1370, 830));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1270, 830));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/red-backgrounds-wallpaper-1280x1024.jpg"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, -110, 1290, 960));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -344,6 +351,7 @@ public class generarInforme extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblmostrar;
     private javax.swing.JLabel txtanio;
