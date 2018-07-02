@@ -114,6 +114,7 @@ public class usuario extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(usuario.class.getName()).log(Level.SEVERE, null, ex);
         }
+          dispose();
     }//GEN-LAST:event_btnInicioActionPerformed
 
     private void txtUsuarioKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUsuarioKeyPressed
