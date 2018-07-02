@@ -35,6 +35,9 @@ public class IngresarDocentes extends javax.swing.JFrame {
     public IngresarDocentes() {
         initComponents();
         bloquear();
+           this.setLocationRelativeTo(rootPane);
+
+        setTitle(" Departamento de Economia");
     }
 
     /**

@@ -31,6 +31,9 @@ public class EditarDocente extends javax.swing.JFrame {
     public EditarDocente() {
         initComponents();
         bloquear();
+           this.setLocationRelativeTo(rootPane);
+
+        setTitle(" Departamento de Economia");
     }
 
     /**

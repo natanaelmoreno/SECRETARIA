@@ -39,6 +39,9 @@ public class principal extends javax.swing.JFrame {
     public principal() {
         initComponents();
         bloquear();
+          this.setLocationRelativeTo(rootPane);
+
+         setTitle(" Departamento de Economia");
         txtcodigo.setEditable(false);
         rs = carrera.llenarCarrera();
         modelocarrera.addElement("Seleccione");

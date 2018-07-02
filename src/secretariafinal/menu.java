@@ -24,9 +24,9 @@ public class menu extends javax.swing.JFrame {
 
         setSize(400, 400);
 
-        this.setLocationRelativeTo(rootPane);
+          this.setLocationRelativeTo(rootPane);
 
-        setTitle(" secretaria ");
+        setTitle(" Departamento de Economia");
     }
 
     /**

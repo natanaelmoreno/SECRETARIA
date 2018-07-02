@@ -38,10 +38,9 @@ public class generarInforme extends javax.swing.JFrame {
 
         initComponents();
 
+   this.setLocationRelativeTo(rootPane);
 
-        this.setLocationRelativeTo(rootPane);
-
-        setTitle(" secretaria ");
+        setTitle(" Departamento de Economia");
 
         modelotabla.addColumn("N. de carnet");
         modelotabla.addColumn("Nombre");
